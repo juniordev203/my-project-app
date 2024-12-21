@@ -12,6 +12,7 @@
     "async-ios": "npx cap sync ios"
   },
   "dependencies": {
+    "@aashu-dubey/capacitor-statusbar-safe-area": "^3.0.0",
     "@capacitor/android": "^6.2.0",
     "@capacitor/core": "^6.2.0",
     "@capacitor/ios": "^6.2.0",
