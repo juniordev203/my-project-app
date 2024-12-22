@@ -2,7 +2,14 @@
 export default {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'primary': '',
+        'lightBackground': '',
+        'darkBackground': '',
+        
+      }
+    },
   },
   plugins: [],
 }

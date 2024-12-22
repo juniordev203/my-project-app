@@ -6,7 +6,7 @@ export default <RouterConfig> {
             {
                 path: '/',
                 component: () =>
-                    import('~/pages/index.vue').then((r) => r.default || r),
+                    import("~/pages/home.vue").then((r) => r.default || r),
                 meta: {
                     layout: 'default'
                 }
