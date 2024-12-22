@@ -16,6 +16,7 @@
     "@capacitor/android": "^6.2.0",
     "@capacitor/core": "^6.2.0",
     "@capacitor/ios": "^6.2.0",
+    "@nuxtjs/ionic": "0.15.1",
     "@nuxtjs/tailwindcss": "6.12.2",
     "@vite-pwa/nuxt": "0.10.6",
     "date-fns": "^4.1.0",

@@ -14,8 +14,8 @@
 </template>
 
 <script lang="ts" setup>
-import { useMyBaseStore } from '~/stores/myBaseStore'; // Nhập store
-import { storeToRefs } from 'pinia'; // Nhập storeToRefs để truy cập trạng thái
+import { storeToRefs } from 'pinia';
+import { useMyBaseStore } from './stores/myBaseStore';
 
 const router = useRouter();
 const { loadingApp, appReady } = storeToRefs(useMyBaseStore()); // Truy cập vào trạng thái appReady từ store
@@ -32,13 +32,10 @@ onMounted(async () => {
   await new Promise<void>((resolve) => {
     setTimeout(() => {
       resolve();
-    }, 1000); // Giới hạn thời gian Splash Screen
+    }, 1000); 
   });
 
-  appReady.value = true; // Đặt appReady thành true để chuyển qua giao diện chính
-
-  // Chuyển hướng đến trang chủ nếu cần
-  router.push('/');
+  appReady.value = true;
 });
 </script>
 
